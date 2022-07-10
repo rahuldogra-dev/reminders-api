@@ -1,0 +1,29 @@
+###
+GET http://localhost:8080/api/reminders
+
+
+###
+GET http://localhost:8080/api/reminders/44e3c9bb-c552-4d4b-b552-25895c72e0c6
+
+###
+POST http://localhost:8080/api/reminders
+Content-Type: application/json
+
+{
+    "title" : "Reminder",
+    "message": "Wake Up",
+    "sendTime": "2023-01-01T00:00:00.000Z",
+    "status": true
+}
+
+
+###
+DELETE http://localhost:8080/api/reminders/44e3c9bb-c552-4d4b-b552-25895c72e0c6
+
+###
+PATCH http://localhost:8080/api/reminders/44e3c9bb-c552-4d4b-b552-25895c72e0c6
+Content-Type: application/json
+
+{
+    "status": false
+}
